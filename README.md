@@ -1,26 +1,12 @@
-# Web Scraping Homework - Mission to Mars
+# Web Scraping - Mission to Mars
 
 ![mission_to_mars](Images/mission_to_mars.png)
 
-In this assignment, you will build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page. The following outlines what you need to do.
-
-### Before You Begin
-
-1. Create a new repository for this project called `web-scraping-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for the web scraping challenge. Use a folder name to correspond to the challenge: **Missions_to_Mars**.
-
-4. Add your notebook files to this folder as well as your flask app.
-
-5. Push the above changes to GitHub or GitLab.
-
 ## Step 1 - Scraping
 
-Complete your initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
+Complete initial scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
-* Create a Jupyter Notebook file called `mission_to_mars.ipynb` and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
+* Create a Jupyter Notebook file called `mission_to_mars.ipynb` and use this to complete all scraping and analysis tasks. The following outlines what was scraped.
 
 ### NASA Mars News
 
@@ -67,7 +53,7 @@ mars_weather = 'Sol 1801 (Aug 30, 2017), Sunny, high -21C/-5F, low -80C/-112F, p
 
 * Visit the USGS Astrogeology site [here](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars) to obtain high resolution images for each of Mar's hemispheres.
 
-* You will need to click each of the links to the hemispheres in order to find the image url to the full resolution image.
+* Click each of the links to the hemispheres in order to find the image url to the full resolution image.
 
 * Save both the image url string for the full resolution hemisphere image, and the Hemisphere title containing the hemisphere name. Use a Python dictionary to store the data using the keys `img_url` and `title`.
 
@@ -103,24 +89,6 @@ Use MongoDB with Flask templating to create a new HTML page that displays all of
 ![final_app_part2.png](Images/final_app_part2.png)
 
 - - -
-
-## Step 3 - Submission
-
-To submit your work to BootCampSpot, create a new GitHub repository and upload the following:
-
-1. The Jupyter Notebook containing the scraping code used.
-
-2. Screenshots of your final application.
-
-3. Submit the link to your new repository to BootCampSpot.
-
-## Hints
-
-* Use Splinter to navigate the sites when needed and BeautifulSoup to help find and parse out the necessary data.
-
-* Use Pymongo for CRUD applications for your database. For this homework, you can simply overwrite the existing document each time the `/scrape` url is visited and new data is obtained.
-
-* Use Bootstrap to structure your HTML template.
 
 ### Copyright
 
